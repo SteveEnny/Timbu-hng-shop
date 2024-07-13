@@ -28,6 +28,9 @@
   display: flex;
   color: #fff;
 }
+.goToCart button {
+  color: #fff;
+}
 .itemPrice {
   display: flex;
   flex-direction: column;
