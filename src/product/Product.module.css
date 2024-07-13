@@ -160,14 +160,25 @@
 
 @media screen and (max-width: 700px) {
   .productItem {
+    padding: 15px;
     flex-direction: column;
     margin: 0 auto;
+  }
+  .cartItem {
+    padding: 0px;
+    /* pad; */
+    gap: 2px;
   }
   .productDescription {
     width: 100%;
     border: 1px solid black;
     padding: 15px;
     border-radius: 5px;
+  }
+  .cartImg img {
+    padding: 5px;
+    width: 130px;
+    height: 120px;
   }
   .cart {
     flex-direction: column;
