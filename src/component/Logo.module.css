@@ -1,0 +1,26 @@
+.img_link {
+  display: flex;
+  align-items: center;
+  /* background-color: rebeccapurple; */
+  height: 48px;
+  padding: 20px;
+}
+
+.logo {
+  width: 232px;
+  height: 47.83px;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 116px;
+    height: 25px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .logo {
+    width: 130px;
+    height: 30px;
+  }
+}

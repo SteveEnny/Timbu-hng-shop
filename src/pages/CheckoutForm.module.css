@@ -1,0 +1,179 @@
+.heading {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37.5px;
+  text-align: left;
+}
+.checkout {
+  /* border: 1px solid blue; */
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 54rem;
+  /* justify-content: space-between; */
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 50rem; */
+  /* flex: 1; */
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.form > * {
+  margin-bottom: 0.7rem;
+  /* border-radius: 3px; */
+}
+/* .form > *:focus {
+  margin-bottom: 0.7rem;
+  border-radius: 3px;
+  outline: none;
+  /* border: none; */
+
+.form input {
+  padding: 0.8rem 0.3rem;
+  padding-left: 0.8rem;
+  border-radius: 5px;
+  /* border: 0.1px solid black; */
+  border: 0.3px solid rgb(93, 93, 93);
+}
+
+.formInput {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: space-between;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  border-color: rgba(0, 123, 255, 1);
+}
+
+.formInput > * {
+  flex: 1;
+}
+
+.form input::placeholder {
+  font-family: Roboto;
+  font-size: 13px;
+  color: #00000080;
+}
+
+.formSelect {
+  width: 100%;
+  position: relative;
+}
+.formSelect select {
+  font: Roboto;
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.8rem;
+  padding-right: 0.5rem;
+  border-radius: 5px;
+  border: 0.5px solid;
+  font-size: 13px;
+  border: 0.3px solid rgb(93, 93, 93);
+
+  color: rgba(0, 0, 0, 1);
+}
+
+.formSelect span {
+  position: absolute;
+  left: 1rem;
+  top: 0.3rem;
+  font-size: 13px;
+  color: #00000080;
+}
+
+option {
+  font-size: 13px;
+  margin: 10px;
+}
+
+.checkoutBtn {
+  padding: 0.6rem;
+  text-transform: uppercase;
+  border: 1.5px solid transparent;
+  background-color: rgba(0, 123, 255, 1);
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.checkoutBtn:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 123, 255, 1);
+  border: 1.5px solid rgba(0, 123, 255, 1);
+}
+
+.orderItem {
+  display: block;
+  width: 100%;
+}
+
+.orderItemMobile {
+  display: none;
+}
+
+.phoneInput {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.phoneInput input {
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 0.4rem;
+  padding-left: 3.5rem;
+}
+
+.phoneInput input::placeholder {
+  color: black;
+}
+
+.phoneImg {
+  position: absolute;
+  width: 3.34rem;
+  top: 0.02rem;
+  margin-left: 0.3px;
+  border-radius: 5px;
+}
+
+.phonePlaceholder {
+  position: absolute;
+  left: 3.5rem;
+  top: 0.3rem;
+  font-size: 13px;
+  color: #00000080;
+}
+@media screen and (max-width: 700px) {
+  .forms {
+    width: 100%;
+  }
+  .formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: space-between;
+  }
+  .orderItem {
+    display: none;
+  }
+
+  .orderItemMobile {
+    display: block;
+  }
+}
