@@ -20,7 +20,7 @@ function Product() {
         try {
           setIsLoading(true);
           const res = await fetch(
-            `https://api.timbu.cloud/products?organization_id=0cdfaafcf9064527a6a0e05d35b161df&reverse_sort=false&page=${pageNum}&size=8&Appid=XCEV4MQUBFHCJ46&Apikey=ca14a63f7af247b4a8ad77fa48b0d1e220240712220815901012&`
+            `https://api.timbu.cloud/products?organization_id=0cdfaafcf9064527a6a0e05d35b161df&reverse_sort=false&page=${pageNum}&size=12&Appid=XCEV4MQUBFHCJ46&Apikey=ca14a63f7af247b4a8ad77fa48b0d1e220240712220815901012&`
           );
           console.log(res);
           if (!res) throw new Error("fail to fetch ");
