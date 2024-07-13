@@ -26,7 +26,7 @@
 
 .goToCart {
   display: flex;
-  /* background-color: aqua; */
+  color: #fff;
 }
 .itemPrice {
   display: flex;
