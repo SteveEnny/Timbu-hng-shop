@@ -28,14 +28,14 @@ function Product() {
           setIsLoading(false);
 
           setProducts(data.items);
-          console.log(data.items);
+          console.log(data.items[0].photos[0].url);
         } catch (err) {
           alert(err.message);
         }
       }
       fecthItem();
     },
-    [pageNum]
+    [pageNum, setProducts, setIsLoading]
   );
 
   function handleAddItem(event, item) {
@@ -78,11 +78,14 @@ function Product() {
                     to={`product/${item.id}`}
                   >
                     <div className={styles.productImg}>
-                      {/* <img src={`/Frame 3.svg`} alt="" /> */}
-                      <img
-                        src={`https://api.timbu.cloud/images/${item.photos[0].url}`}
-                        alt=""
-                      />
+                      {!item.photos[0] ? (
+                        <img src="" alt="" />
+                      ) : (
+                        <img
+                          src={`https://api.timbu.cloud/images/${item.photos[0].url}`}
+                          alt=""
+                        />
+                      )}
                     </div>
                     <div className={styles.productDetails}>
                       <div className={styles.productName}>
